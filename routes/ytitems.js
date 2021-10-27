@@ -23,7 +23,8 @@ router.get('/', async (req, res) => {
                     "thumbnail": video.thumbnail,
                     "duration": video.duration,
                     "views": video.views,
-                    "uploader": video.author
+                    "uploader": video.author,
+                    "time_upload": video.ago
                 }
                 return ytItem;
             });
