@@ -21,9 +21,9 @@ router.get('/', async (req, res) => {
                     "url": video.url,
                     "title": video.title,
                     "thumbnail": video.thumbnail,
-                    "duration": video.duration,
+                    "duration": video.duration.timestamp,
                     "views": video.views,
-                    "uploader": video.author,
+                    "uploader": video.author.name,
                     "time_upload": video.ago
                 }
                 return ytItem;
